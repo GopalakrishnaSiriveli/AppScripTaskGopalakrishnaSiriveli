@@ -1,0 +1,149 @@
+/* font-family: 'Adobe Caslon Pro', sans-serif; 
+font-family: 'Barlow', sans-serif;
+font-family: 'Inter', sans-serif; */
+.top-banner {
+    font-family: "Barlow", sans-serif;
+    width: 100%;
+    background-color: var(--BLACK);
+    font-weight: 400;
+    text-align: left;
+    text-transform: lowercase;
+    color: var(--PRIMARY);
+    padding: 10px 0;
+  }
+  .bannerWrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  .banner {
+    display: flex;
+    column-gap: 10px;
+  }
+  .banner p {
+    text-transform: lowercase;
+    font-size: 18px;
+  }
+  .headerContainer {
+    display: flex;
+    height: 190px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--LIGHTGREY);
+  }
+  .width-100 {
+    width: 100%;
+  }
+  .brandingContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+  }
+  .menu-bar,
+  .closeBtn {
+    display: none;
+  }
+  .logoName p {
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  ul li,
+  ul a {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    color: var(--BLACK);
+  }
+  .iconsContainer ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+  .menuLinks {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+  }
+  .menuLinks ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+  }
+  .menuLinks ul {
+    column-gap: 60px;
+  }
+  
+  @media screen and (max-width: 690px) {
+    .iconsContainer ul {
+      column-gap: 6px;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .iconsContainer ul {
+      column-gap: 6px;
+    }
+    .bannerWrapper .banner:not(:first-child) {
+      display: none;
+    }
+    .iconsContainer ul > li:nth-last-child(-n + 2) {
+      display: none;
+    }
+    .headerContainer {
+      height: 90px;
+      padding-bottom: 0;
+      align-items: center;
+    }
+    .menuLinks {
+      display: none;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+    }
+    .logo .menu-bar {
+      display: block;
+    }
+    .logoName p {
+      font-size: 22px;
+    }
+    .closeBtn {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .closeBtn img {
+      width: 22px;
+    }
+    .menuLinkssideNavbar {
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: row;
+      background-color: var(--WHITE);
+      justify-content: center;
+    }
+    .menuLinkssideNavbar ul {
+      display: flex;
+      flex-direction: column;
+      row-gap: 50px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
